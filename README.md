@@ -2,7 +2,7 @@
 
 **Display a Notes editor in the drawer panel of your AdaptLearning course**
 
-<p><b>This extension is still under developement, will completed soon.</b></p>
+<p><b>This extension is still under developement, will be available soon.</b></p>
 
 <p>
     <img src="docs/anim.gif" alt="Adapt Notes, student takes notes on e-learning course" />
