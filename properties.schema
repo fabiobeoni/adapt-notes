@@ -1,0 +1,95 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required":false,
+  "properties":{
+    "pluginLocations": {
+      "type":"object",
+      "required":true,
+      "properties":{
+        "config": {
+          "type":"object"
+        },
+        "course": {
+          "type":"object",
+          "properties":{
+            "_notes": {
+              "type": "object",
+              "required": false,
+              "legend": "Notes",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required":true,
+                  "default": true,
+                  "title": "Is enabled",
+                  "inputType": {"type": "Boolean", "options": [true, false]},
+                  "validators": [],
+                  "help": "If set to 'false', Notes will be disabled"
+                },
+                "title": {
+                  "type": "string",
+                  "default":"Notes",
+                  "required": true,
+                  "title": "Drawer Title",
+                  "inputType": "Text",
+                  "validators": ["required"],
+                  "translatable": true
+                },
+                "description": {
+                  "type": "string",
+                  "default":"Take your notes on course",
+                  "required": false,
+                  "title": "Drawer Description",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "browserWarn": {
+                  "type": "string",
+                  "default":"Notes are available only for modern browsers. Please update your browser.",
+                  "required": true,
+                  "title": "Unsupported Browser Message",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                 "fileReadError": {
+                   "type": "string",
+                   "default":"Error reading the file.",
+                   "required": true,
+                   "title": "File Read Error Message",
+                   "inputType": "Text",
+                   "validators": [],
+                   "translatable": true
+                 },
+                   "validationWarn": {
+                     "type": "string",
+                     "default":"Please fill the form.",
+                     "required": true,
+                     "title": "Form Validation Message",
+                     "inputType": "Text",
+                     "validators": [],
+                     "translatable": true
+                   }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type":"object"
+        },
+        "article": {
+          "type":"object"
+        },
+        "block": {
+          "type":"object"
+        },
+        "component": {
+          "type":"object"
+        }
+      }
+    }
+  }
+}

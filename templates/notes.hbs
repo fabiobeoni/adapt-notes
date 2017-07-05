@@ -1,0 +1,73 @@
+<div data-notes-bar class="adaptNotesCommandBar">
+    <a data-note-new class="button" title="New Note">
+        <img src="assets/new.svg" />
+    </a>
+    <a data-note-to-document class="button" download="Course-Notes.html"
+       data-href="data:application/octet-stream,@content" title="Export as Document">
+        <img src="assets/reading.svg" />
+    </a>
+    <a data-note-export class="button" download="Course-Notes.notes"
+       data-href="data:application/octet-stream,@content" title="Backup">
+        <img src="assets/download.svg" />
+    </a>
+
+    <label data-note-import for="file-upload" class="button" title="Import Backup">
+        <img src="assets/upload.svg" />
+    </label>
+    <input id="file-upload" type="file" accept=".notes"/>
+
+
+    <input data-note-search type="search" placeholder="Search... (type+enter)" />
+
+    <p data-notes-note>
+        Notes are stored in your browser cache.<br/><br/>
+        Please make sure to backup the notes to
+        your device (click "Backup" button),
+        before cleaning the cache.</p>
+</div>
+
+
+<div data-notes-list class="notes-inner" role="complementary">
+    <div class="aria-label a11y-ignore-focus prevent-default" tabindex="0"></div>
+</div>
+
+
+<div data-note-template class="notes-item-container" data-note-index>
+    <div class="notes-item drawer-item">
+        <button class="base notes-item-open drawer-item-open" tabindex="0" role="button">
+            <div class="drawer-item-title">
+                <div data-note-title class="drawer-item-title-inner h5">TEMPLATE</div>
+            </div>
+            <div class="drawer-item-description">
+                <div data-note-text class="drawer-item-description-inner"></div>
+            </div>
+        </button>
+    </div>
+</div>
+
+
+<div data-note-editor class="drawer-item-open">
+    <form>
+        <div class="adaptNoteCommandBar">
+            <a data-note-save class="button" title="Save">
+                <img src="assets/save.svg" />
+            </a>
+            <a data-note-delete class="button" title="Delete">
+                <img src="assets/delete.svg" />
+            </a>
+            <a data-note-cancel class="button" title="Cancel">
+                <img src="assets/back.svg" />
+            </a>
+        </div>
+
+        <div class="adaptNotesFormItem">
+            <label>Title (*)</label>
+            <input type="text" data-note-title required placeholder="Required">
+        </div>
+
+        <div class="adaptNotesFormItem">
+            <label>Text (*)</label>
+            <textarea  data-note-text required placeholder="Required"></textarea>
+        </div>
+    </form>
+</div>
