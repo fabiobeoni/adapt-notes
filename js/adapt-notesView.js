@@ -286,7 +286,7 @@ define(function(require) {
             var href = ui.$exportBtn().attr('data-href');
 
             //preserves white spaces in text
-            var content = escape(JSON.stringify(_notes));
+            var content = encodeURIComponent(JSON.stringify(_notes));
 
             href = href.replace('@content', content);
 
@@ -313,7 +313,7 @@ define(function(require) {
             });
 
             //preserves spaces in text
-            content = escape(content);
+            content = encodeURIComponent(content);
 
             href = href.replace('@content', content);
             ui.$toDocumentBtn().attr('href', href);
