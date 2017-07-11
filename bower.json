@@ -1,13 +1,15 @@
 {
   "name": "adapt-notes",
-  "version": "1.0.5",
+  "repository": "git://github.com/fabiobeoni/adapt-notes.git",
   "framework": "^2.0.0",
-  "homepage": "https://github.com/fabiobeoni/adapt-notes",
-  "issues": "",
-  "displayName" : "Notes",
-  "extension" : "adapt-notes",
   "description": "Take notes about the course, print and export them.",
+  "version": "1.0.6",
+  "displayName": "Notes",
   "main": "/js/adapt-notes.js",
+  "extension" : "adapt-notes",
+  "targetAttribute": "_notes",
+  "homepage": "https://github.com/fabiobeoni/adapt-notes",
+  "issues": "https://github.com/fabiobeoni/adapt-notes/issues",
   "keywords": [
     "adapt-plugin",
     "adapt-extension",
@@ -17,6 +19,8 @@
     "learner notes",
     "lesson notes"
   ],
-  "license": "GPLv3",
-  "targetAttribute": "_notes"
+  "license": "CC BY-ND 4.0",
+  "authors": [
+    "Fabio Beoni <reg@beoni.net>"
+  ]
 }
