@@ -39,9 +39,11 @@ define([
 
         //registers the event listener to display
         //the plugin custom UI into the drawer
-        var notesView = new NotesView();
+        //NotesView is initialized only when the
+        //drawer displays, to the view HTML is
+        //available.
         Adapt.on('adaptNotes:showContentObjects', function() {
-            Adapt.drawer.triggerCustomView(notesView.$el);
+            Adapt.drawer.triggerCustomView(new NotesView().$el);
         });
     });
 
