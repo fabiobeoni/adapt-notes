@@ -32,5 +32,5 @@ If you are interested, I'm <a href="https://it.linkedin.com/in/fabio-beoni-6a784
 
 ----------------------------
 **Version number:**  1.0.9
-**Adapt Framework versions:**  >= 3.0
+**Adapt Framework versions:**  >= 2.0
 **Author:** <a href="https://it.linkedin.com/in/fabio-beoni-6a7848101" target="_blanck">Fabio Beoni</a>
