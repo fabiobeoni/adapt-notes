@@ -1,7 +1,7 @@
 {
     "name": "adapt-notes",
     "repository": "git://github.com/fabiobeoni/adapt-notes.git",
-    "framework": "^3.0.0",
+    "framework": "^2.0.0",
     "description": "Take notes about the course, print and export them.",
     "version": "1.0.9",
     "displayName": "Notes",
