@@ -377,7 +377,7 @@ define(function(require) {
                             //decodes the base64 content of the backup
                             //updates teh notes in the local storage
                             //and on view
-                            var content = e.target.result.replace(BASE64_PREFIX,'');
+                            var content = e.target.result.replace(BASE64_PREFIX,'').replace('data:application/octet-stream;base64,','');
                             content = Base64.decode(content);
                             content = JSON.parse(content);
                             _notes = content;
