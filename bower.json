@@ -3,7 +3,7 @@
     "repository": "git://github.com/fabiobeoni/adapt-notes.git",
     "framework": "^2.0.0",
     "description": "Take notes about the course, print and export them.",
-    "version": "1.0.9",
+    "version": "1.10.0",
     "displayName": "Notes",
     "main": "/js/adapt-notes.js",
     "extension": "adapt-notes",
